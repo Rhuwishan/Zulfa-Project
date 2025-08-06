@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>إحصائيات الجمعية</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --main-green: #a3c9a8;
+      --gold: #d4af37;
+      --black: #111;
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Tajawal', sans-serif;
+      background-color: var(--white);
+      color: var(--black);
+      text-align: center;
+    }
+
+    header {
+      background-color: var(--white);
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #eee;
+    }
+
+    header img.logo {
+      height: 60px;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: var(--black);
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    .page-title {
+      font-size: 60px;
+      margin: 80px 0 40px;
+      color: var(--black);
+    }
+
+    .years-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 40px;
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .year-box {
+      background-color: var(--main-white);
+      color: var(--black);
+      padding: 80px 0;
+      font-size: 40px;
+      font-weight: bold;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: transform 0.3s, background-color 0.3s;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      text-decoration: none;
+    }
+
+    .year-box:hover {
+      background-color:#6365b7;
+      transform: translateY(-8px);
+    }
+
+    footer {
+      background-color: var(--black);
+      color: var(--white);
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+      margin-top: 100px;
+    }
+
+    @media (max-width: 600px) {
+      .page-title {
+        font-size: 40px;
+      }
+
+      .year-box {
+        font-size: 28px;
+        padding: 60px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header data-aos="fade-down">
+    <img src="logo.png" alt="شعار الجمعية" class="logo" />
+    <nav>
+      <a href="indexz.html">الرئيسية</a>
+      </nav>
+  </header>
+
+  <!-- Title -->
+  <h1 class="page-title" data-aos="fade-up">اختر سنة الإحصائيات</h1>
+
+  <!-- Year Boxes -->
+  <div class="years-container" data-aos="fade-up">
+    <a href="year-2021.html" class="year-box">2021</a>
+    <a href="year-2022.html" class="year-box">2022</a>
+    <a href="year-2023.html" class="year-box">2023</a>
+    <a href="year-2024.html" class="year-box">2024</a>
+    <a href="year-2025.html" class="year-box">2025</a>
+
+  </div>
+
+  <!-- Footer -->
+  <footer data-aos="fade-up">
+    ©️ 2025 جمعية زلفى النسائية - جميع الحقوق محفوظة
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+
+</body>
+</html>

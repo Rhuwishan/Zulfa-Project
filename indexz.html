@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>جمعية زلفى النسائية</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <style>
+    :root {
+      --primary: #6c63ff; /* بنفسجي */
+      --dark: #0a0a23;
+      --light: #ffffff;
+      --gray: #f5f5f5;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Tajawal', sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.7;
+    }
+
+    .centered-header {
+  position: relative;
+  text-align: center;
+  padding: 20px 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo-alone {
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  height: 70px;
+}
+
+.center-content h2 {
+  margin: 0;
+  font-size: 22px;
+  color: var(--dark);
+  font-weight: 700;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+    .hero {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      font-size: 18px;
+      color: #444;
+    }
+
+    .btn {
+      background-color: var(--primary);
+      color: var(--light);
+      border: none;
+      padding: 12px 28px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #594fd0;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .section p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 17px;
+      color: #444;
+    }
+
+    .dashboard-image {
+      max-width: 1100px;
+      margin: 50px auto;
+      text-align: center;
+    }
+
+    .dashboard-image img {
+  width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+  display: block;
+  margin: 0 auto;
+}
+
+    .members-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 40px auto 0;
+    }
+
+    .member-box {
+      background-color: var(--light);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      font-weight: 600;
+    }
+
+    footer {
+      background-color: var(--dark);
+      color: var(--light);
+      text-align: center;
+      padding: 25px 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
+  <!-- ===== Header ===== -->
+<header class="centered-header">
+  <img src="logo.png" alt="شعار الجمعية" class="logo-alone" />
+  <div class="center-content">
+    <h2>جمعية زلفى النسائية</h2>
+    <nav>
+      <a href="indexz.html">الرئيسية</a>
+      <a href="#goals">الأهداف</a>
+      <a href="stat.html">الإحصائيات</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+  </div>
+</header>
+  <!-- ===== Hero ===== -->
+  <section class="hero" data-aos="fade-up">
+    <h1>جمعية زلفى النسائية للأعمال الاجتماعية</h1>
+    <p>منصة إلكترونية تعرض بيانات وإحصائيات أعمال الجمعية منذ تأسيسها، بهدف دعم رؤية المملكة 2030.</p>
+    <a href="stat.html"><button class="btn">اطّلعي على الإحصائيات</button></a>
+  </section>
+
+  <!-- ===== Dashboard Image ===== -->
+  <div class="dashboard-image" data-aos="fade-up">
+    <img src="stat2.jpg" alt="إحصائيات الجمعية" />
+  </div>
+
+  <!-- ===== About ===== -->
+  <section class="section" id="about" data-aos="fade-up">
+    <h2>عن الجمعية</h2>
+    <p>
+      تعمل جمعية زلفى على دعم وتمكين المجتمع من خلال برامج اجتماعية وتنموية تركز على الفتيات والنساء. هدفنا هو تمكين المرأة مما يعزز في تحقيق رؤية المملكة 2030.
+    </p>
+  </section>
+
+  <!-- ===== Goals ===== -->
+  
+  <section class="section" id="goals" data-aos="fade-up">
+    <h2 style="margin-bottom: 7px;">الأهداف</h2>
+    <div style="max-width: 1200px; margin: 5px auto 0;">
+      <img src="goals.png" alt="أهداف الجمعية" style="width: 100%; display: block; margin: 0 auto;" />
+    </div>
+  </section>
+
+  <!-- ===== Founding Members ===== -->
+  <section class="section" data-aos="fade-up">
+    <h2>العضوات المؤسِسات</h2>
+    <div class="members-grid">
+      <div class="member-box">لطيفة عبدالرحمن صالح العوجان</div>
+      <div class="member-box">عائشة فراج محمد المطيري</div>
+      <div class="member-box">منال محمد عبدالرحمن الفهيد</div>
+      <div class="member-box">مريم عبدالعزيز صالح السمحان</div>
+      <div class="member-box">لولوة عبدالعزيز محمد المنقلي</div>
+      <div class="member-box">أشواق ناصر داود الداوود</div>
+      <div class="member-box">أنوار ناصر داود الداوود</div>
+      <div class="member-box">بداء حميد بجاد العتيبي</div>
+      <div class="member-box">أروى عبدالرحمن أحمد الرشيد</div>
+      <div class="member-box">مها زكي أحمد المليفي</div>
+      <div class="member-box">ريم عبدالله سعد الحريص</div>
+      <div class="member-box">أفنان عبدالله علي الرشيد</div>
+      <div class="member-box">نورة عبدالله علي الرشيد</div>
+      <div class="member-box">شروق خالد عبدالله العتيق</div>
+    </div>
+  </section>
+
+<!-- ===== Contact ===== -->
+<section class="section" id="contact" data-aos="fade-up">
+  <h2>تواصل معنا</h2>
+  <p style="text-align: center;">يمكنك التواصل معنا عبر البريد الإلكتروني أو منصات التواصل الاجتماعي.</p>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; text-align: center; direction: rtl;">
+    <!-- البريد -->
+    <div>
+      📧 <a href="mailto:zulfa1441@hotmail.com" style="text-decoration: none; color: inherit;">zulfa1441@hotmail.com</a>
+    </div>
+
+    <!-- الجوال -->
+    <div>
+      📞 0503383843 - 0503383873
+    </div>
+
+    <!-- تويتر -->
+    <div>
+      <a href="https://x.com/Zulfa1441" target="_blank" style="text-decoration: none; color: inherit;">
+        <i class="fab fa-x-twitter"></i> Zulfa1441
+      </a>
+    </div>
+
+    <!-- سناب شات -->
+    <div>
+      <a href="https://www.snapchat.com/add/Zulfa1441" target="_blank" style="text-decoration: none; color: inherit;">
+        <i class="fab fa-snapchat-ghost"></i> Zulfa1441
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    © 2025 جمعية الزلفى النسائية - جميع الحقوق محفوظة
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000 });</script>
+
+</body>
+</html>

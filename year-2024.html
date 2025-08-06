@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>إحصائيات سنة 2024 - جمعية الزلفى</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    :root {
+      --main-green: #cccccc;
+      --dark-green: #3E5F44;
+      --gold: #d4af37;
+      --black: #111;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Tajawal', sans-serif;
+      background-color: var(--white);
+      color: var(--black);
+      line-height: 1.7;
+    }
+
+    header {
+      background-color: var(--white);
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #eee;
+    }
+
+    header h1 {
+      font-size: 26px;
+      color: var(--black);
+    }
+
+    nav {
+      background-color: var(--main-green);
+      padding: 15px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: var(--black);
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      margin: 40px 0 20px;
+      font-weight: bold;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto 50px;
+      padding: 0 20px;
+    }
+
+    .card {
+      background-color: var(--white);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 225px;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      font-size: 20px;
+      color: var(--dark-green);
+      margin-bottom: 10px;
+      min-height: 50px;
+    }
+
+    .card p {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .chart-container {
+      max-width: 800px;
+      margin: 0 auto 50px;
+      padding: 20px;
+      background-color: var(--white);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: var(--black);
+      color: var(--white);
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .section-title {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header data-aos="fade-down">
+    <h1>📊 إحصائيات سنة 2024</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav data-aos="fade-up">
+    <a href="indexz.html">الرئيسية</a>
+    <a href="indexz.html#goals">الأهداف</a>
+    <a href="stat.html">الإحصائيات</a>
+    <a href="year-2021.html">2021</a>
+    <a href="year-2022.html">2022</a>
+    <a href="year-2023.html">2023</a>
+    <a href="year-2024.html">2024</a>
+    <a href="year-2025.html">2025</a>
+
+  </nav>
+
+  <!-- Overview Cards -->
+  <h2 class="section-title" data-aos="fade-up">نظرة عامة</h2>
+  <section class="cards" data-aos="fade-up">
+    <div class="card">
+      <h3>عدد المستفيدين/المستفيدات</h3>
+      <p>551</p>
+    </div>
+    <div class="card">
+      <h3>عدد المتطوعين/المتطوعات</h3>
+      <p>542</p>
+    </div>
+    <div class="card">
+      <h3>عدد الدورات واللقاءات</h3>
+      <p>6</p>
+    </div>
+    <div class="card">
+      <h3>عدد الأنشطة والفعاليات</h3>
+      <p>18</p>
+    </div>
+    <div class="card">
+      <h3>عدد المبادرات</h3>
+      <p>4</p>
+    </div>
+  </section>
+
+  <div style="text-align: center; margin-top: 40px;">
+    <a href="تقرير٢٠٢٤.pdf" target="_blank" style="
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #594fd0;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 16px;
+    ">
+      📄 عرض ملف الإنجازات الكامل
+    </a>
+  </div>
+<br> <br>
+
+  <!-- Bar Chart -->
+  <div class="chart-container" >
+    <h3 style="text-align:center;">عدد المستفيدين شهريًا (تقديري)</h3>
+    <canvas id="barChart2024"></canvas>
+  </div>
+
+  <!-- Pie Chart -->
+  <div class="chart-container" data-aos="fade-up">
+    <h3 style="text-align:center;">توزيع الجهود حسب الأنشطة</h3>
+    <canvas id="pieChart2024"></canvas>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    ©️ 2025 جمعية الزلفى النسائية - جميع الحقوق محفوظة
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+
+    // Bar Chart
+    const barCtx = document.getElementById('barChart2024').getContext('2d');
+    new Chart(barCtx, {
+      type: 'bar',
+      data: {
+        labels: ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'],
+        datasets: [{
+          label: 'عدد المستفيدين',
+          data: [120, 150, 180, 160, 170, 140, 130, 140, 160, 180, 130, 146],
+          backgroundColor: '#6365b7'
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: {
+              display: true,
+              text: 'عدد المستفيدين'
+            }
+          }
+        }
+      }
+    });
+
+    // Pie Chart
+    const pieCtx = document.getElementById('pieChart2024').getContext('2d');
+    new Chart(pieCtx, {
+      type: 'pie',
+      data: {
+        labels: ['مستفيدين', 'متطوعين', 'دورات', 'فعاليات', 'مبادرات'],
+        datasets: [{
+          data: [551, 542, 6, 18, 4],
+         backgroundColor: [
+           '#594da3' , // بنفسجي غامق جداً
+            '#725CAD', // بنفسجي ملكي
+            '#7B68EE', // بنفسجي متوسط
+            '#9A7DFF', // بنفسجي راقٍ
+            '#C7B8FF'  // بنفسجي ناعم
+       ] }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                return `${context.label}: ${context.parsed}`;
+              }
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
