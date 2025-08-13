@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+
   <style>
     :root {
       --primary: #6c63ff; /* بنفسجي */
@@ -35,42 +36,41 @@
     }
 
     .centered-header {
-      position: relative;
-      text-align: center;
-      padding: 20px 30px;
-      border-bottom: 1px solid #eee;
-    }
+  position: relative;
+  text-align: center;
+  padding: 20px 30px;
+  border-bottom: 1px solid #eee;
+}
 
-    .logo-alone {
-      position: absolute;
-      right: 40px;
-      top: 30px;
-      height: 70px;
-    }
+.logo-alone {
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  height: 70px;
+}
 
-    .center-content h2 {
-      margin: 0;
-      font-size: 22px;
-      color: var(--dark);
-      font-weight: 700;
-    }
+.center-content h2 {
+  margin: 0;
+  font-size: 22px;
+  color: var(--dark);
+  font-weight: 700;
+}
 
-    nav {
-      margin-top: 15px;
-    }
+nav {
+  margin-top: 15px;
+}
 
-    nav a {
-      margin: 0 12px;
-      text-decoration: none;
-      color: var(--dark);
-      font-weight: 700;
-      transition: color 0.3s;
-    }
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 700;
+  transition: color 0.3s;
+}
 
-    nav a:hover {
-      color: var(--primary);
-    }
-
+nav a:hover {
+  color: var(--primary);
+}
     .hero {
       text-align: center;
       padding: 60px 20px 30px;
@@ -129,12 +129,12 @@
     }
 
     .dashboard-image img {
-      width: 100%;
-      border-radius: 0;
-      box-shadow: none;
-      display: block;
-      margin: 0 auto;
-    }
+  width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+  display: block;
+  margin: 0 auto;
+}
 
     .members-grid {
       display: grid;
@@ -165,92 +165,24 @@
         font-size: 26px;
       }
     }
-
-    /* === تحسين العرض على الشاشات الصغيرة === */
-    @media (max-width: 768px) {
-      .logo-alone {
-        position: static;
-        display: block;
-        margin: 0 auto 15px;
-        height: 60px;
-      }
-
-      .center-content h2 {
-        font-size: 20px;
-      }
-
-      nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        margin-top: 10px;
-      }
-
-      nav a {
-        margin: 5px;
-        font-size: 14px;
-      }
-
-      .hero h1 {
-        font-size: 24px;
-      }
-
-      .hero p {
-        font-size: 16px;
-        padding: 0 10px;
-      }
-
-      .section h2 {
-        font-size: 22px;
-      }
-
-      .section p {
-        font-size: 15px;
-        padding: 0 10px;
-      }
-
-      .members-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-      }
-
-      .member-box {
-        font-size: 14px;
-        padding: 15px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero h1 {
-        font-size: 20px;
-      }
-      .hero p {
-        font-size: 14px;
-      }
-      .btn {
-        padding: 10px 20px;
-        font-size: 14px;
-      }
-    }
   </style>
 </head>
 
 <body>
   <!-- ===== Header ===== -->
-  <header class="centered-header">
-    <img src="logo.png" alt="شعار الجمعية" class="logo-alone" />
-    <div class="center-content">
-      <h2>جمعية زلفى النسائية</h2>
-      <nav>
-        <a href="index.html">الرئيسية</a>
-        <a href="#goals">الأهداف</a>
-        <a href="stat.html">الإحصائيات</a>
-        <a href="#contact">تواصل معنا</a>
-      </nav>
-    </div>
-  </header>
-
+  <!-- ===== Header ===== -->
+<header class="centered-header">
+  <img src="logo.png" alt="شعار الجمعية" class="logo-alone" />
+  <div class="center-content">
+    <h2>جمعية زلفى النسائية</h2>
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="#goals">الأهداف</a>
+      <a href="stat.html">الإحصائيات</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+  </div>
+</header>
   <!-- ===== Hero ===== -->
   <section class="hero" data-aos="fade-up">
     <h1>جمعية زلفى النسائية للأعمال الاجتماعية</h1>
@@ -272,6 +204,7 @@
   </section>
 
   <!-- ===== Goals ===== -->
+  
   <section class="section" id="goals" data-aos="fade-up">
     <h2 style="margin-bottom: 7px;">الأهداف</h2>
     <div style="max-width: 1200px; margin: 5px auto 0;">
@@ -300,18 +233,37 @@
     </div>
   </section>
 
-  <!-- ===== Contact ===== -->
-  <section class="section" id="contact" data-aos="fade-up">
-    <h2>تواصل معنا</h2>
-    <p style="text-align: center;">يمكنك التواصل معنا عبر البريد الإلكتروني أو منصات التواصل الاجتماعي.</p>
+<!-- ===== Contact ===== -->
+<section class="section" id="contact" data-aos="fade-up">
+  <h2>تواصل معنا</h2>
+  <p style="text-align: center;">يمكنك التواصل معنا عبر البريد الإلكتروني أو منصات التواصل الاجتماعي.</p>
 
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; text-align: center; direction: rtl;">
-      <div>📧 <a href="mailto:zulfa1441@hotmail.com" style="text-decoration: none; color: inherit;">zulfa1441@hotmail.com</a></div>
-      <div>📞 0503383843 - 0503383873</div>
-      <div><a href="https://x.com/Zulfa1441" target="_blank" style="text-decoration: none; color: inherit;"><i class="fab fa-x-twitter"></i> Zulfa1441</a></div>
-      <div><a href="https://www.snapchat.com/add/Zulfa1441" target="_blank" style="text-decoration: none; color: inherit;"><i class="fab fa-snapchat-ghost"></i> Zulfa1441</a></div>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; text-align: center; direction: rtl;">
+    <!-- البريد -->
+    <div>
+      📧 <a href="mailto:zulfa1441@hotmail.com" style="text-decoration: none; color: inherit;">zulfa1441@hotmail.com</a>
     </div>
-  </section>
+
+    <!-- الجوال -->
+    <div>
+      📞 0503383843 - 0503383873
+    </div>
+
+    <!-- تويتر -->
+    <div>
+      <a href="https://x.com/Zulfa1441" target="_blank" style="text-decoration: none; color: inherit;">
+        <i class="fab fa-x-twitter"></i> Zulfa1441
+      </a>
+    </div>
+
+    <!-- سناب شات -->
+    <div>
+      <a href="https://www.snapchat.com/add/Zulfa1441" target="_blank" style="text-decoration: none; color: inherit;">
+        <i class="fab fa-snapchat-ghost"></i> Zulfa1441
+      </a>
+    </div>
+  </div>
+</section>
 
   <!-- ===== Footer ===== -->
   <footer>
@@ -321,5 +273,6 @@
   <!-- AOS -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>AOS.init({ duration: 1000 });</script>
+
 </body>
 </html>
